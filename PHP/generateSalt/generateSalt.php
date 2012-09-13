@@ -1,4 +1,4 @@
-<?
+<?php
 // Default is to generate a 16 character long salt
 function generateSalt($max = 16){
 	// You can customise the character set here:
@@ -9,4 +9,6 @@ function generateSalt($max = 16){
         $salt .= $characterList{mt_rand(0, (strlen($characterList) - 1))};
         $i++;
     }
+    return $salt;
+}
 ?>

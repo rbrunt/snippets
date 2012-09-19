@@ -13,7 +13,7 @@
             <input name="length" type="number" min="0" max="1000" step="1" value="<?php if(isset($_GET['length'])){echo $_GET['length'];}else{echo "16";} ?>" autofocus>
             <input type="submit" value="Get Salt">
         </form>
-        <p style="font-family: monospace;">
+        <p style="font-family: monospace; word-wrap: break-word;">
 			<?php
 				// Default is to generate a 16 character long salt
 				function generateSalt($max = 16){

@@ -13,6 +13,13 @@ function ajaxRequest(url, callbackfunction, param1){ //param1 is optional, callb
 		}
 	}
 	
-	xmlhttp.open("GET",url,true);
+	//Set uncache so that we don't pull a cached version of a request.
+	if(url.search(/\x3f/)===-1){ //Checks if the url already has a ? in it
+		var uncache="?uncache="; //If not this must be the first parameter
+	}else{
+		var uncache="&uncache=";	
+	}
+	
+	xmlhttp.open("GET",url+uncache+Math.random(),true); 
 	xmlhttp.send(); //Send the request
 }

@@ -1,6 +1,6 @@
 # ajaxRequest()
 
-This is a general function for running an `xmlHttpRequest()`.
+This is a general function for running an `xmlHttpRequest()`, including a feature for preventing cached versions of your file being pulled.
 
 ## Usage
 

@@ -10,4 +10,4 @@ You can customise the character set easily - just add or remove the characters y
 
 ## Example
 
-There is a live example of using the generatesalt function [here](http://www.dur.ac.uk/r.j.brunt/examples/gravatar-getter/). You can view the source code in the `example/` directory.
+There is a live example of using the generatesalt function [here](http://www.dur.ac.uk/r.j.brunt/examples/generatesalt/). You can view the source code in the `example/` directory.
